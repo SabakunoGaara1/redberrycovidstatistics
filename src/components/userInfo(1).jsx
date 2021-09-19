@@ -6,7 +6,7 @@ import { useFormStateContext } from "../utils/hooks";
 import {Radio, RadioGroup} from '@adobe/react-spectrum';
 import logo from '../images/Vector2.png';
 import '../App.css'
-import pirstpagephoto from '../images/firstpage.png';
+
 
 
 
@@ -107,9 +107,11 @@ export const UserForm = () => {
           {...register('email',{
           required: 'იმეილი აუცილებელია',
           pattern: {
+
           message: 'არავალიდური იმეილი' 
           },
           pattern: {
+          value:  /@redberry.ge/,
           message: 'გთხოვთ დარეგისტრირდეთ რედბერის მეილით(youremail@redberry.ge)' 
           },
                                       
@@ -124,7 +126,7 @@ export const UserForm = () => {
       </form>                 
                         
       <div className="img-wrapper">
-      <img src={pirstpagephoto} alt="firstPage" />
+      <img src="https://raw.githubusercontent.com/SabakunoGaara1/redberrycovidstatistics/master/src/images/firstpage.png" alt="firstPage" />
       </div>
         
     </div>

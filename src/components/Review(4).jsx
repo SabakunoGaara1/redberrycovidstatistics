@@ -239,7 +239,7 @@ export const ReviewFormDetails = () => {
         </form>
                 
         <div className="img-wrapper1">
-            <img src={fourth} alt="fourthpage" />
+            <img src="https://raw.githubusercontent.com/SabakunoGaara1/redberrycovidstatistics/master/src/images/4thpage.png" alt="fourthpage" />
         </div>
 
         </div>

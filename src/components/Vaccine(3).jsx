@@ -132,7 +132,7 @@ export const VaccineInfo = () => {
             </div>
             </form>
             <div className="img-wrapper">
-               <img src={third} alt="thirdpage" />
+               <img src="https://raw.githubusercontent.com/SabakunoGaara1/redberrycovidstatistics/master/src/images/3rdpage.png" alt="thirdpage" />
              </div>
 
              

@@ -4,7 +4,7 @@ import { useFormStateContext } from "../utils/hooks";
 import logo1 from '../images/Vector2.png';
 import logo2 from '../images/Vector9.png';
 import '../App.css'
-import second from '../images/second.png';
+
 
 export const CovidForm = () => {
   const {fields, setStep, updateFields  } = useFormStateContext();
@@ -112,7 +112,7 @@ export const CovidForm = () => {
         </div>
       </form>
             <div className="img-wrapper">
-            <img src={second} alt="secondpage" />
+            <img src="https://raw.githubusercontent.com/SabakunoGaara1/redberrycovidstatistics/master/src/images/second.png" alt="secondpage" />
       </div>
     </div>
   </div>   

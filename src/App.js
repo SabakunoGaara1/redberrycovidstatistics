@@ -4,11 +4,6 @@ import { defaultFields, STEPS } from "./utils/constants";
 import { FormFieldsContext } from './utils/context/FormFieldContext';
 import { FormStepContext } from './utils/context/FormStepContext';
 import { getCurrentForm } from "./utils/helpers";
-import {
-  BrowserRouter, 
-  Route,
-  Index,
-} from "react-router-dom";
 
 function App() {
   const [step, setStep] = useState(STEPS.HELLO);
@@ -21,7 +16,6 @@ function App() {
   };
 
   return (
-  <BrowserRouter basename={window.location.pathname || ''}>
     <FormStepContext.Provider value={{step, setStep}}>
       <FormFieldsContext.Provider value={{fields, updateFields}}>
         <div className="App">
@@ -29,7 +23,6 @@ function App() {
         </div>
       </FormFieldsContext.Provider>
     </FormStepContext.Provider>
-  </BrowserRouter>
   );
 }
 
